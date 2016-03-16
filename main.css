@@ -1,0 +1,112 @@
+
+/*$grey: #e2e4e6;
+$greydarken: #999;
+$black: #000;
+$blue: #0079BF;
+$bluedarken: #0c6aa4;
+$white: #ffffff;*/
+body, html{
+    font-size: 16px !important;
+}
+a:focus {
+    text-decoration: none;
+}
+.container {
+    margin-top: 1.25rem;
+    width: 100%;
+}
+.team_title {
+    padding-left: 0.625rem;
+}
+.glyphicon-user{
+    height: 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    width: 1.875rem;
+    //color:$grey;
+    color: #999;
+    text-align: center;
+}
+.team_title-name {
+    display: inline-block;
+}
+
+.boards_list {
+	list-style: none;
+	padding-left: 0;
+	overflow: hidden;
+}
+.boards_list li {
+	margin: 0.625rem 0;
+    padding: 0 .625rem;
+}
+.boards_list-item {
+    display: block;
+    //background: $blue;
+	background: #0079BF;
+	height: 6.25rem;
+	border-radius: 0.31rem;
+    text-decoration: none;
+}
+.boards_list-item:hover {
+    //background: $bluedarken;
+	background: #0c6aa4;
+    text-decoration: none;
+}
+
+.board-title, .board-description {
+    display: inline-block;
+    //color: $white;
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0.625rem;
+}
+.board-description {
+    display: block;
+    font-size: 0.625rem;
+}
+.new-board-create {
+    //color: $greydark;
+    color: #8c8c8c;
+    line-height: 6.25rem;
+}
+
+.boards_list-item-new {
+    //background: $grey;
+	background: #e2e4e6;
+    text-align: center;
+}
+.boards_list-item-new:hover {
+    //background: $greydark;
+	background: #d7d8d9;
+}
+
+.new-board-window {
+    /*display: none;*/
+    border-radius: 0.31rem;
+    border: 1px solid #d6dadc;
+}
+.new-board-window_head {
+    text-align: center;
+    position: relative;
+    margin-top: 0.31rem;
+    //color: $greydark;
+    color: #8c8c8c; 
+}
+.new-board-window_head-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    //color: $grey;
+    color: #e2e4e6;
+}
+.new-board-window_head-close:hover {
+    //color: $greydark;
+    color: #999;
+}
+.new-board-window hr{
+    margin: 0.625rem 0;
+}
+.new-board-window_content {
+    padding-bottom: 0.625rem;
+}
