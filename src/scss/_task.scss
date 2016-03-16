@@ -1,0 +1,93 @@
+$task-main-color:#c6c7c0;
+$task-header:1.5rem;
+$task-btn-color:#B3A7A7;
+$task-btn-hover-color:#fff;
+$task-text-color:white;
+$progress-bg-color:blue;
+.task{
+  padding:1rem;
+  margin:1rem;
+  background: $task-main-color;
+
+  .task-name-info, .btn, fieldset, .task-full-info, .task-progress.empty{
+    display:none;
+  }
+  div.task-progress{
+    width:100%;
+    padding:0;
+    height:$task-header;
+    margin:0;
+    background: $task-text-color;
+    &>div{
+      font-size:0.5em;
+      text-align: center;
+      color:$task-text-color;
+      float:left;
+      height:100%;
+
+      display: inline-block;
+      background: $progress-bg-color;
+    }
+  }
+  .task-name-info, .new-title{
+    font-size: $task-header;
+    text-align: center;
+    color:$task-text-color;
+  }
+  .task-full-info{
+    font-size:0.9*$task-header;
+    color:$task-text-color;
+  }
+  .btn{
+    border:none;
+    color:$task-btn-color;
+    font-size:2*$task-header;
+    font-weight:100;
+    background: transparent;
+    &:hover{
+      color:$task-btn-hover-color;
+    }
+  }
+  .plus{
+    font-size: 2rem;
+  }
+  &.task-active{
+    .task-name-info,
+    .task-full-info,
+    .edit,.save,
+    .task-progress
+    {
+      display:block;
+      &.empty{
+        display:none;
+      }
+    }
+  }
+
+  &.task-passive{
+    .task-name-info{
+      display:block;
+    }
+    .edit,.look{
+      display:block;
+    }
+    &:active{
+      .btn{
+        display:none;
+      }
+    }
+  }
+  &.task-edit{
+    fieldset,.check-list,.cancel,.description,.cancel,.save
+    {
+      display:block;
+    }
+  }
+  &.task-add{
+    .plus,.new-title,.task-add
+    {
+      display:block;
+    }
+  }
+
+}

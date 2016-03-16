@@ -1,0 +1,77 @@
+/* line 2, ../scss/main.scss */
+.holder {
+  padding: 2rem; }
+
+/* line 7, ../scss/_task.scss */
+.task {
+  padding: 1rem;
+  margin: 1rem;
+  background: #c6c7c0; }
+  /* line 12, ../scss/_task.scss */
+  .task .task-name-info, .task .btn, .task fieldset, .task .task-full-info, .task .task-progress.empty {
+    display: none; }
+  /* line 15, ../scss/_task.scss */
+  .task div.task-progress {
+    width: 100%;
+    padding: 0;
+    height: 1.5rem;
+    margin: 0;
+    background: white; }
+    /* line 21, ../scss/_task.scss */
+    .task div.task-progress > div {
+      font-size: 0.5em;
+      text-align: center;
+      color: white;
+      float: left;
+      height: 100%;
+      display: inline-block;
+      background: blue; }
+  /* line 32, ../scss/_task.scss */
+  .task .task-name-info, .task .new-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white; }
+  /* line 37, ../scss/_task.scss */
+  .task .task-full-info {
+    font-size: 1.35rem;
+    color: white; }
+  /* line 41, ../scss/_task.scss */
+  .task .btn {
+    border: none;
+    color: #B3A7A7;
+    font-size: 3rem;
+    font-weight: 100;
+    background: transparent; }
+    /* line 47, ../scss/_task.scss */
+    .task .btn:hover {
+      color: #fff; }
+  /* line 51, ../scss/_task.scss */
+  .task .plus {
+    font-size: 2rem; }
+  /* line 55, ../scss/_task.scss */
+  .task.task-active .task-name-info,
+  .task.task-active .task-full-info,
+  .task.task-active .edit, .task.task-active .save,
+  .task.task-active .task-progress {
+    display: block; }
+    /* line 61, ../scss/_task.scss */
+    .task.task-active .task-name-info.empty,
+    .task.task-active .task-full-info.empty,
+    .task.task-active .edit.empty, .task.task-active .save.empty,
+    .task.task-active .task-progress.empty {
+      display: none; }
+  /* line 68, ../scss/_task.scss */
+  .task.task-passive .task-name-info {
+    display: block; }
+  /* line 71, ../scss/_task.scss */
+  .task.task-passive .edit, .task.task-passive .look {
+    display: block; }
+  /* line 75, ../scss/_task.scss */
+  .task.task-passive:active .btn {
+    display: none; }
+  /* line 81, ../scss/_task.scss */
+  .task.task-edit fieldset, .task.task-edit .check-list, .task.task-edit .cancel, .task.task-edit .description, .task.task-edit .cancel, .task.task-edit .save {
+    display: block; }
+  /* line 87, ../scss/_task.scss */
+  .task.task-add .plus, .task.task-add .new-title, .task.task-add .task-add {
+    display: block; }
