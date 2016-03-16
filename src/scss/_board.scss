@@ -1,0 +1,80 @@
+﻿
+/*$radius-block: 4px;*/
+/*$primary-color: #d6d6d6;*/
+/*$title-color: #286090;*/
+/*$description-color: #777;*/
+/*$plus-color: #bebebe;*/
+
+.m_bottom_sm{
+    margin-bottom: 1rem;
+}
+
+textarea{
+    resize:none;
+}
+
+.board{
+    /*background-color: $primary-color;*/
+    background-color: #d6d6d6;
+    width: 30rem;
+    /*border-radius: $radius-block;*/
+    border-radius: 4px;
+    padding: 1rem;
+    position: relative;    
+}
+
+.board-height{
+    min-height: 23rem;
+}
+
+.board_title{
+    /*color: $title-color;*/
+    color: #286090;
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 2rem;    
+}
+
+.board_plus{
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    /*background-color: $bg_plus;*/
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.2s ease;
+    font-size: 6rem;    
+}
+
+.board_plus:hover{
+    cursor: pointer;
+    box-shadow:rgba(0, 0, 0, 0.3) 0 4px 6px 0;
+}
+
+.board_plus:before{
+    content: "+";
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /*color: $plus-color;*/
+    color: #636363;
+}
+
+
+.board_description{
+    /*color: $description-color;*/
+    color: #777;
+}
+
+.board_desc_ico{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}

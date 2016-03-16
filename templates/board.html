@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="../src/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/scss/board.scss" />    
+</head>
+<body>
+    <!-- Add board -->
+    <div class="board board-height m_bottom_sm">
+        <h3 class="board_title">Add new board</h3>
+        <span class="board_plus"></span>
+    </div>
+
+    <!-- Description hide -->
+    <div class="board m_bottom_sm">
+        <h3 class="board_title">New board</h3>
+        <a class="board_desc_ico" href="#">
+            <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+        </a>        
+    </div>
+
+    <!-- Description show -->
+    <div class="board m_bottom_sm">
+        <h3 class="board_title">New board</h3>
+        <a class="board_desc_ico" href="#">
+            <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+        </a>            
+        <span class="board_description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </span>
+    </div>
+
+    <!-- Edit board -->
+    <div class="board">
+        <form>
+            <div class="form-group">                
+                <input type="text" class="form-control" placeholder="Title board">
+            </div>
+            <div class="form-group">                
+                <textarea class="form-control" rows="5" placeholder="Description"></textarea>
+            </div> 
+            <div class="clearfix">
+                <button type="submit" class="btn btn-default pull-left">Cancel</button>
+                <button type="submit" class="btn btn-success pull-right">Create</button>
+            </div>           
+        </form>        
+    </div>
+</body>
+</html>
