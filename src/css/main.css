@@ -1,6 +1,149 @@
 /* line 2, ../scss/main.scss */
-.holder {
-  padding: 2rem; }
+html, body {
+  font-size: 16px; }
+
+/* line 3, ../scss/_interface.scss */
+body, html, .panel-body {
+  height: 100%; }
+
+/* line 6, ../scss/_interface.scss */
+.header {
+  padding: 1.25rem 2.1875rem 0 1.5625rem; }
+
+/* line 9, ../scss/_interface.scss */
+.header-xs {
+  padding-top: 1.25rem; }
+
+/* line 12, ../scss/_interface.scss */
+.panel-heading {
+  padding: 0; }
+
+/* line 15, ../scss/_interface.scss */
+#dropdown {
+  margin-left: 1.875rem; }
+
+/* line 18, ../scss/_interface.scss */
+#plus {
+  background-color: white;
+  margin: 0 1.25rem; }
+
+/* line 22, ../scss/_interface.scss */
+.second-row {
+  margin: 1.25rem 0; }
+
+/*$grey: #e2e4e6;
+$greydarken: #999;
+$black: #000;
+$blue: #0079BF;
+$bluedarken: #0c6aa4;
+$white: #ffffff;*/
+/* line 8, ../scss/_project.scss */
+a:focus {
+  text-decoration: none; }
+
+/* line 11, ../scss/_project.scss */
+.container {
+  margin-top: 1.25rem;
+  width: 100%; }
+
+/* line 15, ../scss/_project.scss */
+.team_title {
+  padding-left: 0.625rem; }
+
+/* line 18, ../scss/_project.scss */
+.glyphicon-user {
+  height: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  width: 1.875rem;
+  color: #999;
+  text-align: center; }
+
+/* line 27, ../scss/_project.scss */
+.team_title-name {
+  display: inline-block; }
+
+/* line 31, ../scss/_project.scss */
+.boards_list {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden; }
+
+/* line 36, ../scss/_project.scss */
+.boards_list li {
+  margin: 0.625rem 0;
+  padding: 0 .625rem; }
+
+/* line 40, ../scss/_project.scss */
+.boards_list-item {
+  display: block;
+  background: #0079BF;
+  height: 6.25rem;
+  border-radius: 0.31rem;
+  text-decoration: none; }
+
+/* line 48, ../scss/_project.scss */
+.boards_list-item:hover {
+  background: #0c6aa4;
+  text-decoration: none; }
+
+/* line 54, ../scss/_project.scss */
+.board-title, .board-description {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0.625rem; }
+
+/* line 61, ../scss/_project.scss */
+.board-description {
+  display: block;
+  font-size: 0.625rem; }
+
+/* line 65, ../scss/_project.scss */
+.new-board-create {
+  color: #8c8c8c;
+  line-height: 6.25rem; }
+
+/* line 71, ../scss/_project.scss */
+.boards_list-item-new {
+  background: #e2e4e6;
+  text-align: center; }
+
+/* line 76, ../scss/_project.scss */
+.boards_list-item-new:hover {
+  background: #d7d8d9; }
+
+/* line 81, ../scss/_project.scss */
+.new-board-window {
+  /*display: none;*/
+  border-radius: 0.31rem;
+  border: 1px solid #d6dadc; }
+
+/* line 86, ../scss/_project.scss */
+.new-board-window_head {
+  text-align: center;
+  position: relative;
+  margin-top: 0.31rem;
+  color: #8c8c8c; }
+
+/* line 93, ../scss/_project.scss */
+.new-board-window_head-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #e2e4e6; }
+
+/* line 100, ../scss/_project.scss */
+.new-board-window_head-close:hover {
+  color: #999; }
+
+/* line 104, ../scss/_project.scss */
+.new-board-window hr {
+  margin: 0.625rem 0; }
+
+/* line 107, ../scss/_project.scss */
+.new-board-window_content {
+  padding-bottom: 0.625rem; }
 
 /* line 7, ../scss/_task.scss */
 .task {
@@ -75,3 +218,81 @@
   /* line 87, ../scss/_task.scss */
   .task.task-add .plus, .task.task-add .new-title, .task.task-add .task-add {
     display: block; }
+
+/*$radius-block: 4px;*/
+/*$primary-color: #d6d6d6;*/
+/*$title-color: #286090;*/
+/*$description-color: #777;*/
+/*$plus-color: #bebebe;*/
+/* line 8, ../scss/_board.scss */
+.m_bottom_sm {
+  margin-bottom: 1rem; }
+
+/* line 12, ../scss/_board.scss */
+textarea {
+  resize: none; }
+
+/* line 16, ../scss/_board.scss */
+.board {
+  /*background-color: $primary-color;*/
+  background-color: #d6d6d6;
+  width: 30rem;
+  /*border-radius: $radius-block;*/
+  border-radius: 4px;
+  padding: 1rem;
+  position: relative; }
+
+/* line 26, ../scss/_board.scss */
+.board-height {
+  min-height: 23rem; }
+
+/* line 30, ../scss/_board.scss */
+.board_title {
+  /*color: $title-color;*/
+  color: #286090;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 2rem; }
+
+/* line 38, ../scss/_board.scss */
+.board_plus {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  /*background-color: $bg_plus;*/
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.2s ease;
+  font-size: 6rem; }
+
+/* line 55, ../scss/_board.scss */
+.board_plus:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 4px 6px 0; }
+
+/* line 60, ../scss/_board.scss */
+.board_plus:before {
+  content: "+";
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /*color: $plus-color;*/
+  color: #636363; }
+
+/* line 71, ../scss/_board.scss */
+.board_description {
+  /*color: $description-color;*/
+  color: #777; }
+
+/* line 76, ../scss/_board.scss */
+.board_desc_ico {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; }
