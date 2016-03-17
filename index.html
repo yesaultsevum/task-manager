@@ -2,13 +2,34 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<script>document.write('<base href="' + document.location + '" />');</script>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="src/css/main.css"/>
     <title></title>
-    
+    <!-- IE required polyfills, in this exact order -->
+    <script src="/task-manager/src/js/lib/es6-shim.min.js"></script>
+    <script src="/task-manager/src/js/lib/system-polyfills.js"></script>
+    <script src="/task-manager/src/js/lib/shims_for_IE.js"></script>
+   
+    <script src="/task-manager/src/js/lib/angular2-polyfills.js"></script>
+    <script src="/task-manager/src/js/lib/system.js"></script>
+    <script src="/task-manager/src/js/lib/typescript.js"></script>
+    <script src="/task-manager/src/js/lib/Rx.js"></script>
+    <script src="/task-manager/src/js/lib/angular2.dev.js"></script>
+    <script src="/task-manager/src/js/lib/router.dev.js"></script>
+    <script>
+      System.config({
+        transpiler: 'typescript',
+        typescriptOptions: { emitDecoratorMetadata: true }, 
+        packages: {'app': {defaultExtension: 'ts'}},
+        baseURL: '/task-manager'
+      });
+        System.import('app/main')
+              .then(null, console.error.bind(console));
+    </script>
 </head>
 <body>
-
+<projects-app>Loading...</projects-app>
 </body>
 </html>
