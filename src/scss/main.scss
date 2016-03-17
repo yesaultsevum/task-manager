@@ -1,8 +1,10 @@
 //tmp
-.holder{
-  padding:2rem;
+html, body{
+    font-size: 16px;
 }
 @import "components";
+
+@import "interface";
 @import "project";
 @import "task";
 @import "board";

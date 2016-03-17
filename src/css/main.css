@@ -1,6 +1,6 @@
 /* line 2, ../scss/main.scss */
-.holder {
-  padding: 2rem; }
+html, body {
+  font-size: 16px; }
 
 /* line 4, ../scss/components.scss */
 .m-xs {
@@ -202,6 +202,35 @@
 .m-left-xl {
   margin-left: 25px; }
 
+/* line 3, ../scss/_interface.scss */
+body, html, .panel-body {
+  height: 100%; }
+
+/* line 6, ../scss/_interface.scss */
+.header {
+  padding: 1.25rem 2.1875rem 0 1.5625rem; }
+
+/* line 9, ../scss/_interface.scss */
+.header-xs {
+  padding-top: 1.25rem; }
+
+/* line 12, ../scss/_interface.scss */
+.panel-heading {
+  padding: 0; }
+
+/* line 15, ../scss/_interface.scss */
+#dropdown {
+  margin-left: 1.875rem; }
+
+/* line 18, ../scss/_interface.scss */
+#plus {
+  background-color: white;
+  margin: 0 1.25rem; }
+
+/* line 22, ../scss/_interface.scss */
+.second-row {
+  margin: 1.25rem 0; }
+
 /*$grey: #e2e4e6;
 $greydarken: #999;
 $black: #000;
@@ -209,23 +238,19 @@ $blue: #0079BF;
 $bluedarken: #0c6aa4;
 $white: #ffffff;*/
 /* line 8, ../scss/_project.scss */
-body, html {
-  font-size: 16px !important; }
-
-/* line 11, ../scss/_project.scss */
 a:focus {
   text-decoration: none; }
 
-/* line 14, ../scss/_project.scss */
+/* line 11, ../scss/_project.scss */
 .container {
   margin-top: 1.25rem;
   width: 100%; }
 
-/* line 18, ../scss/_project.scss */
+/* line 15, ../scss/_project.scss */
 .team_title {
   padding-left: 0.625rem; }
 
-/* line 21, ../scss/_project.scss */
+/* line 18, ../scss/_project.scss */
 .glyphicon-user {
   height: 1.875rem;
   font-size: 1.25rem;
@@ -234,22 +259,22 @@ a:focus {
   color: #999;
   text-align: center; }
 
-/* line 30, ../scss/_project.scss */
+/* line 27, ../scss/_project.scss */
 .team_title-name {
   display: inline-block; }
 
-/* line 34, ../scss/_project.scss */
+/* line 31, ../scss/_project.scss */
 .boards_list {
   list-style: none;
   padding-left: 0;
   overflow: hidden; }
 
-/* line 39, ../scss/_project.scss */
+/* line 36, ../scss/_project.scss */
 .boards_list li {
   margin: 0.625rem 0;
   padding: 0 .625rem; }
 
-/* line 43, ../scss/_project.scss */
+/* line 40, ../scss/_project.scss */
 .boards_list-item {
   display: block;
   background: #0079BF;
@@ -257,66 +282,66 @@ a:focus {
   border-radius: 0.31rem;
   text-decoration: none; }
 
-/* line 51, ../scss/_project.scss */
+/* line 48, ../scss/_project.scss */
 .boards_list-item:hover {
   background: #0c6aa4;
   text-decoration: none; }
 
-/* line 57, ../scss/_project.scss */
+/* line 54, ../scss/_project.scss */
 .board-title, .board-description {
   display: inline-block;
   color: #ffffff;
   font-size: 1rem;
   margin: 0.625rem; }
 
-/* line 64, ../scss/_project.scss */
+/* line 61, ../scss/_project.scss */
 .board-description {
   display: block;
   font-size: 0.625rem; }
 
-/* line 68, ../scss/_project.scss */
+/* line 65, ../scss/_project.scss */
 .new-board-create {
   color: #8c8c8c;
   line-height: 6.25rem; }
 
-/* line 74, ../scss/_project.scss */
+/* line 71, ../scss/_project.scss */
 .boards_list-item-new {
   background: #e2e4e6;
   text-align: center; }
 
-/* line 79, ../scss/_project.scss */
+/* line 76, ../scss/_project.scss */
 .boards_list-item-new:hover {
   background: #d7d8d9; }
 
-/* line 84, ../scss/_project.scss */
+/* line 81, ../scss/_project.scss */
 .new-board-window {
   /*display: none;*/
   border-radius: 0.31rem;
   border: 1px solid #d6dadc; }
 
-/* line 89, ../scss/_project.scss */
+/* line 86, ../scss/_project.scss */
 .new-board-window_head {
   text-align: center;
   position: relative;
   margin-top: 0.31rem;
   color: #8c8c8c; }
 
-/* line 96, ../scss/_project.scss */
+/* line 93, ../scss/_project.scss */
 .new-board-window_head-close {
   position: absolute;
   top: 0;
   right: 0;
   color: #e2e4e6; }
 
-/* line 103, ../scss/_project.scss */
+/* line 100, ../scss/_project.scss */
 .new-board-window_head-close:hover {
   color: #999; }
 
-/* line 107, ../scss/_project.scss */
+/* line 104, ../scss/_project.scss */
 .new-board-window hr {
   margin: 0.625rem 0; }
 
-/* line 110, ../scss/_project.scss */
+/* line 107, ../scss/_project.scss */
 .new-board-window_content {
   padding-bottom: 0.625rem; }
 
