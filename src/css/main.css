@@ -2,6 +2,324 @@
 .holder {
   padding: 2rem; }
 
+/* line 4, ../scss/components.scss */
+.m-xs {
+  margin: 5px; }
+
+/* line 7, ../scss/components.scss */
+.m-sm {
+  margin: 10px; }
+
+/* line 10, ../scss/components.scss */
+.m-md {
+  margin: 15px; }
+
+/* line 13, ../scss/components.scss */
+.m-lg {
+  margin: 20px; }
+
+/* line 16, ../scss/components.scss */
+.m-xl {
+  margin: 25px; }
+
+/* line 21, ../scss/components.scss */
+.p-xs {
+  padding: 5px; }
+
+/* line 24, ../scss/components.scss */
+.p-sm {
+  padding: 10px; }
+
+/* line 27, ../scss/components.scss */
+.p-md {
+  padding: 15px; }
+
+/* line 30, ../scss/components.scss */
+.p-lg {
+  padding: 20px; }
+
+/* line 33, ../scss/components.scss */
+.p-xl {
+  padding: 25px; }
+
+/* line 38, ../scss/components.scss */
+.p-top-xs {
+  padding-top: 5px; }
+
+/* line 41, ../scss/components.scss */
+.p-top-sm {
+  padding-top: 10px; }
+
+/* line 44, ../scss/components.scss */
+.p-top-md {
+  padding-top: 15px; }
+
+/* line 47, ../scss/components.scss */
+.p-top-lg {
+  padding-top: 20px; }
+
+/* line 50, ../scss/components.scss */
+.p-top-xl {
+  padding-top: 25px; }
+
+/* line 55, ../scss/components.scss */
+.p-bottom-xs {
+  padding-bottom: 5px; }
+
+/* line 58, ../scss/components.scss */
+.p-bottom-sm {
+  padding-bottom: 10px; }
+
+/* line 61, ../scss/components.scss */
+.p-bottom-md {
+  padding-bottom: 15px; }
+
+/* line 64, ../scss/components.scss */
+.p-bottom-lg {
+  padding-bottom: 20px; }
+
+/* line 67, ../scss/components.scss */
+.p-bottom-xl {
+  padding-bottom: 25px; }
+
+/* line 72, ../scss/components.scss */
+.p-left-xs {
+  padding-left: 5px; }
+
+/* line 75, ../scss/components.scss */
+.p-left-sm {
+  padding-left: 10px; }
+
+/* line 78, ../scss/components.scss */
+.p-left-md {
+  padding-left: 15px; }
+
+/* line 81, ../scss/components.scss */
+.p-left-lg {
+  padding-left: 20px; }
+
+/* line 84, ../scss/components.scss */
+.p-left-xl {
+  padding-left: 25px; }
+
+/* line 89, ../scss/components.scss */
+.p-right-xs {
+  padding-right: 5px; }
+
+/* line 92, ../scss/components.scss */
+.p-right-sm {
+  padding-right: 10px; }
+
+/* line 95, ../scss/components.scss */
+.p-right-md {
+  padding-right: 15px; }
+
+/* line 98, ../scss/components.scss */
+.p-right-lg {
+  padding-right: 20px; }
+
+/* line 101, ../scss/components.scss */
+.p-right-xl {
+  padding-right: 25px; }
+
+/* line 107, ../scss/components.scss */
+.m-top-xs {
+  margin-top: 5px; }
+
+/* line 110, ../scss/components.scss */
+.m-top-sm {
+  margin-top: 10px; }
+
+/* line 113, ../scss/components.scss */
+.m-top-md {
+  margin-top: 15px; }
+
+/* line 116, ../scss/components.scss */
+.m-top-lg {
+  margin-top: 20px; }
+
+/* line 119, ../scss/components.scss */
+.m-top-xl {
+  margin-top: 25px; }
+
+/* line 124, ../scss/components.scss */
+.m-bottom-xs {
+  margin-bottom: 5px; }
+
+/* line 127, ../scss/components.scss */
+.m-bottom-sm {
+  margin-bottom: 10px; }
+
+/* line 130, ../scss/components.scss */
+.m-bottom-md {
+  margin-bottom: 15px; }
+
+/* line 133, ../scss/components.scss */
+.m-bottom-lg {
+  margin-bottom: 20px; }
+
+/* line 136, ../scss/components.scss */
+.m-bottom-xl {
+  margin-bottom: 25px; }
+
+/* line 141, ../scss/components.scss */
+.m-right-xs {
+  margin-right: 5px; }
+
+/* line 144, ../scss/components.scss */
+.m-right-sm {
+  margin-right: 10px; }
+
+/* line 147, ../scss/components.scss */
+.m-right-md {
+  margin-right: 15px; }
+
+/* line 150, ../scss/components.scss */
+.m-right-lg {
+  margin-right: 20px; }
+
+/* line 153, ../scss/components.scss */
+.m-right-xl {
+  margin-right: 25px; }
+
+/* line 158, ../scss/components.scss */
+.m-left-xs {
+  margin-left: 5px; }
+
+/* line 161, ../scss/components.scss */
+.m-left-sm {
+  margin-left: 10px; }
+
+/* line 164, ../scss/components.scss */
+.m-left-md {
+  margin-left: 15px; }
+
+/* line 167, ../scss/components.scss */
+.m-left-lg {
+  margin-left: 20px; }
+
+/* line 170, ../scss/components.scss */
+.m-left-xl {
+  margin-left: 25px; }
+
+/*$grey: #e2e4e6;
+$greydarken: #999;
+$black: #000;
+$blue: #0079BF;
+$bluedarken: #0c6aa4;
+$white: #ffffff;*/
+/* line 8, ../scss/_project.scss */
+body, html {
+  font-size: 16px !important; }
+
+/* line 11, ../scss/_project.scss */
+a:focus {
+  text-decoration: none; }
+
+/* line 14, ../scss/_project.scss */
+.container {
+  margin-top: 1.25rem;
+  width: 100%; }
+
+/* line 18, ../scss/_project.scss */
+.team_title {
+  padding-left: 0.625rem; }
+
+/* line 21, ../scss/_project.scss */
+.glyphicon-user {
+  height: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  width: 1.875rem;
+  color: #999;
+  text-align: center; }
+
+/* line 30, ../scss/_project.scss */
+.team_title-name {
+  display: inline-block; }
+
+/* line 34, ../scss/_project.scss */
+.boards_list {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden; }
+
+/* line 39, ../scss/_project.scss */
+.boards_list li {
+  margin: 0.625rem 0;
+  padding: 0 .625rem; }
+
+/* line 43, ../scss/_project.scss */
+.boards_list-item {
+  display: block;
+  background: #0079BF;
+  height: 6.25rem;
+  border-radius: 0.31rem;
+  text-decoration: none; }
+
+/* line 51, ../scss/_project.scss */
+.boards_list-item:hover {
+  background: #0c6aa4;
+  text-decoration: none; }
+
+/* line 57, ../scss/_project.scss */
+.board-title, .board-description {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0.625rem; }
+
+/* line 64, ../scss/_project.scss */
+.board-description {
+  display: block;
+  font-size: 0.625rem; }
+
+/* line 68, ../scss/_project.scss */
+.new-board-create {
+  color: #8c8c8c;
+  line-height: 6.25rem; }
+
+/* line 74, ../scss/_project.scss */
+.boards_list-item-new {
+  background: #e2e4e6;
+  text-align: center; }
+
+/* line 79, ../scss/_project.scss */
+.boards_list-item-new:hover {
+  background: #d7d8d9; }
+
+/* line 84, ../scss/_project.scss */
+.new-board-window {
+  /*display: none;*/
+  border-radius: 0.31rem;
+  border: 1px solid #d6dadc; }
+
+/* line 89, ../scss/_project.scss */
+.new-board-window_head {
+  text-align: center;
+  position: relative;
+  margin-top: 0.31rem;
+  color: #8c8c8c; }
+
+/* line 96, ../scss/_project.scss */
+.new-board-window_head-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #e2e4e6; }
+
+/* line 103, ../scss/_project.scss */
+.new-board-window_head-close:hover {
+  color: #999; }
+
+/* line 107, ../scss/_project.scss */
+.new-board-window hr {
+  margin: 0.625rem 0; }
+
+/* line 110, ../scss/_project.scss */
+.new-board-window_content {
+  padding-bottom: 0.625rem; }
+
 /* line 7, ../scss/_task.scss */
 .task {
   padding: 1rem;
@@ -75,3 +393,82 @@
   /* line 87, ../scss/_task.scss */
   .task.task-add .plus, .task.task-add .new-title, .task.task-add .task-add {
     display: block; }
+
+/*$radius-block: 4px;*/
+/*$primary-color: #d6d6d6;*/
+/*$title-color: #286090;*/
+/*$description-color: #777;*/
+/*$plus-color: #bebebe;*/
+/* line 8, ../scss/_board.scss */
+.m_bottom_sm {
+  margin-bottom: 1rem; }
+
+/* line 12, ../scss/_board.scss */
+textarea {
+  resize: none;
+  border: 1px solid; }
+
+/* line 17, ../scss/_board.scss */
+.board {
+  /*background-color: $primary-color;*/
+  background-color: #d6d6d6;
+  width: 30rem;
+  /*border-radius: $radius-block;*/
+  border-radius: 4px;
+  padding: 1rem;
+  position: relative; }
+
+/* line 27, ../scss/_board.scss */
+.board-height {
+  min-height: 23rem; }
+
+/* line 31, ../scss/_board.scss */
+.board_title {
+  /*color: $title-color;*/
+  color: #286090;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 2rem; }
+
+/* line 39, ../scss/_board.scss */
+.board_plus {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  /*background-color: $bg_plus;*/
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.2s ease;
+  font-size: 6rem; }
+
+/* line 56, ../scss/_board.scss */
+.board_plus:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 4px 6px 0; }
+
+/* line 61, ../scss/_board.scss */
+.board_plus:before {
+  content: "+";
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /*color: $plus-color;*/
+  color: #636363; }
+
+/* line 72, ../scss/_board.scss */
+.board_description {
+  /*color: $description-color;*/
+  color: #777; }
+
+/* line 77, ../scss/_board.scss */
+.board_desc_ico {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; }

@@ -1,0 +1,172 @@
+﻿$size: 5px;
+
+// full margin
+.m-xs{
+    margin: $size;
+}  
+.m-sm{
+    margin: $size * 2;
+}
+.m-md{
+    margin: $size * 3;
+}
+.m-lg{
+    margin: $size * 4;  
+}
+.m-xl{
+    margin: $size * 5;
+}
+  
+// full padding
+.p-xs{
+    padding: $size;
+}
+.p-sm{
+    padding: $size * 2;
+}
+.p-md{
+    padding: $size * 3;
+}
+.p-lg{
+    padding: $size * 4;
+}
+.p-xl{
+    padding: $size * 5;
+}
+  
+//padding top
+.p-top-xs{
+    padding-top: $size;
+}
+.p-top-sm{
+  padding-top: $size * 2;
+}
+.p-top-md{
+  padding-top: $size * 3;
+}
+.p-top-lg{
+  padding-top: $size * 4;
+}
+.p-top-xl{
+  padding-top: $size * 5;
+}
+
+//padding bottom 
+.p-bottom-xs{
+  padding-bottom: $size;
+}
+.p-bottom-sm{
+  padding-bottom: $size * 2;
+}
+.p-bottom-md{
+  padding-bottom: $size * 3;
+}
+.p-bottom-lg{
+  padding-bottom: $size * 4;
+}
+.p-bottom-xl{
+  padding-bottom: $size * 5;
+}
+  
+//padding left 
+.p-left-xs{
+  padding-left: $size;
+}
+.p-left-sm{
+  padding-left: $size * 2;
+}
+.p-left-md{
+  padding-left: $size * 3;
+}
+.p-left-lg{
+  padding-left: $size * 4;
+}
+.p-left-xl{
+  padding-left: $size * 5;
+}
+  
+//padding right 
+.p-right-xs{
+  padding-right: $size;
+}
+.p-right-sm{
+  padding-right: $size * 2;
+}
+.p-right-md{
+  padding-right: $size * 3;
+}
+.p-right-lg{
+  padding-right: $size * 4;
+}
+.p-right-xl{
+  padding-right: $size * 5;
+}
+
+
+//margin top
+.m-top-xs{
+    margin-top: $size;
+}
+.m-top-sm{
+    margin-top: $size * 2;
+}
+.m-top-md{
+    margin-top: $size * 3;
+}
+.m-top-lg{
+    margin-top: $size * 4;
+}
+.m-top-xl{
+    margin-top: $size * 5;
+}
+
+//margin bottom
+.m-bottom-xs{
+    margin-bottom: $size;
+}
+.m-bottom-sm{
+    margin-bottom: $size * 2;
+}
+.m-bottom-md{
+    margin-bottom: $size * 3;
+}
+.m-bottom-lg{
+    margin-bottom: $size * 4;
+}
+.m-bottom-xl{
+    margin-bottom: $size * 5;
+}
+
+//margin right
+.m-right-xs{
+    margin-right: $size;
+}
+.m-right-sm{
+    margin-right: $size * 2;
+}
+.m-right-md{
+    margin-right: $size * 3;
+}
+.m-right-lg{
+    margin-right: $size * 4;
+}
+.m-right-xl{
+    margin-right: $size * 5;
+}
+
+//margin left
+.m-left-xs{
+    margin-left: $size;
+}
+.m-left-sm{
+    margin-left: $size * 2;
+}
+.m-left-md{
+    margin-left: $size * 3;
+}
+.m-left-lg{
+    margin-left: $size * 4;
+}
+.m-left-xl{
+    margin-left: $size * 5;
+}
