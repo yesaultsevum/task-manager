@@ -1,4 +1,4 @@
-<div class="team_title">
+<div class="team_title" *ngIf="project">
     <div
         class="btn btn-default"
         (click)="goToProjects()"
@@ -6,7 +6,7 @@
         <span class="glyphicon glyphicon-chevron-left"></span>
     </div>
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-    <h4 class="team_title-name">Our Boards</h4>
+    <h4 class="team_title-name">{{project.name}}</h4>
 </div>
 <ul class="boards_list">
     <div *ngIf="project">

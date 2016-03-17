@@ -6,13 +6,17 @@ import {Project} from './project';
 
 @Component({
   selector: 'my-projects',
-  templateUrl: 'app/projects-list.component.html',
-  styleUrls: ['app/projects-list.component.css'],
+  templateUrl: 'templates/projects-list.component.html',
+  // styleUrls: ['app/projects-list.component.css'],
   directives: [ProjectDetailComponent]
 })
 export class ProjectsListComponent implements OnInit {
   public projects: Project[];
   public selectedProject: Project;
+  public projectAddData = {
+    name        : '',
+    description : ''
+  };
   public projectsView = 'view';
 
   constructor(private _projectService: ProjectService, private _router: Router) { }
@@ -37,5 +41,17 @@ export class ProjectsListComponent implements OnInit {
   onSelect(project: Project) { 
     this.selectedProject = project;
     this._router.navigate(['Dashboard', { id: this.selectedProject.idProj }]);
+  }
+
+  addProject(projectAddData : ProjectAddData) {
+    var newProject = Object.assign({}, projectAddData)
+    newProject.idProj = this.projects.length + 1;
+    this.projects.push(newProject);
+    this.projectsView = 'view';
+    this.projectAddData = {
+      name        : '',
+      description : ''
+    }
+    console.log(projectAddData, this.projects.length);
   }
 }

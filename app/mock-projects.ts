@@ -2,13 +2,13 @@
 
 export var PROJECTS: Project[] = [
 	{
-		idProj 			: 11,
-		name 				: 'First',
+		idProj 		: 1,
+		name 		: 'First',
 		description : 'First Description'
 	},
 	{
-		idProj 			: 12,
-		name 				: 'Second',
+		idProj 		: 2,
+		name 		: 'Second',
 		description : 'Second Description'
 	}
 ];
