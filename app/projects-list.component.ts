@@ -1,6 +1,7 @@
+import 'rxjs/Rx';
 import {Component, OnInit} from 'angular2/core';
 import {Http, Response} from 'angular2/http';
-import {Response} from 'angular2/http';
+import {Headers, RequestOptions} from 'angular2/http';
 import {Router} from 'angular2/router';
 import {ProjectService} from './project.service';
 import {ProjectDetailComponent} from './project-detail.component';
@@ -25,24 +26,25 @@ export class ProjectsListComponent implements OnInit {
     private _projectService : ProjectService,
     private _router : Router,
     //private response : Response,
-    //private http : Http
+    //backend : ConnectionBackend,
+    private http : Http
   ) { }
 
   getProjects() {
+    // this._projectService.getProjects().subscribe(
+    //                                      projects => this.projects = projects,
+    //                                      error =>  this.errorMessage = <any>error,
+    //                                      () => console.log('Secret Quote Complete')
+    //                                     );
+    //console.log(this._projectService.getProjects());
     this._projectService.getProjects().then(projects => this.projects = projects);
   }
 
-  // private handleError (error: Response) {
-  //   // in a real world app, we may send the error to some remote logging infrastructure
-  //   // instead of just logging it to the console
-  //   console.error(error);
-  //   //return Observable.throw(error.json().error || 'Server error');
-  // }
   // getProjects () {
   //   console.log(this);
-  //   // return this.http.get('http://10.13.15.72/api/Albrus.aspx/ProjectGetAll')
-  //   //                 .map(projects => <Project[]> res.json().data)
-  //   //                 .catch(this.handleError);
+  //   return this.http.get('http://10.13.15.72/api/Albrus.aspx/ProjectGetAll')
+  //                   .map(projects => <Project[]> res.json().data)
+  //                   .catch(this.handleError);
   // }
 
   gotoDetail() {
