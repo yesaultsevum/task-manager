@@ -9,9 +9,9 @@ $progress-bg-color:blue;
   margin:1rem;
   background: $task-main-color;
 
-  .task-name-info, .btn, fieldset, .task-full-info, .task-progress.empty{
+/*  .task-name-info, .btn, fieldset, .task-full-info, .task-progress.empty{
     display:none;
-  }
+  }*/
   div.task-progress{
     width:100%;
     padding:0;
@@ -38,7 +38,7 @@ $progress-bg-color:blue;
     font-size:0.9*$task-header;
     color:$task-text-color;
   }
-  .btn{
+  /*.btn{
     border:none;
     color:$task-btn-color;
     font-size:2*$task-header;
@@ -47,7 +47,7 @@ $progress-bg-color:blue;
     &:hover{
       color:$task-btn-hover-color;
     }
-  }
+  }*/
   .plus{
     font-size: 2rem;
   }
@@ -70,11 +70,6 @@ $progress-bg-color:blue;
     }
     .edit,.look{
       display:block;
-    }
-    &:active{
-      .btn{
-        display:none;
-      }
     }
   }
   &.task-edit{

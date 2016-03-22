@@ -1,5 +1,6 @@
 import {Component, OnInit} from 'angular2/core';
 import {Router} from 'angular2/router';
+import {Http, Response} from 'angular2/http';
 //import {Hero} from './hero';
 import {ProjectService} from './project.service';
 
