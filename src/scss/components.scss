@@ -1,4 +1,15 @@
 ﻿$size: 5px;
+$radius: 2px;
+$defaultColor: #000;
+$primaryColor: #fff;
+$defaultBg: #E0E0E0;
+$primaryBg: #3f51b5;
+$successBg: #5cb85c;
+$infoBg: #5bc0de;
+$warningBg: #f0ad4e;
+$dangerBg: #ff4081;
+$activeShadow: rgba(0, 0, 0, 0.3) 0 4px 6px 0;
+$boxShadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 
 // full margin
 .m-xs{
@@ -169,4 +180,82 @@
 }
 .m-left-xl{
     margin-left: $size * 5;
+}
+
+/* Radius */
+.r-xs{
+    border-radius: $radius;
+}
+.r-sm{
+    border-radius: $radius * 2;
+}
+.r-md{
+    border-radius: $radius * 4;
+}
+
+/* Buttons */
+body{
+    padding: 40px;
+} 
+
+.bt{
+    border: none;
+    position: relative;
+    height: 2.2rem;
+    margin: 0;
+    min-width: 4rem;
+    padding: 0 1rem;
+    display: inline-block;
+    font-family: "Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.2rem;
+    vertical-align: middle;
+}
+
+
+
+
+@mixin btnStyle($color, $bg, $shadow, $shadowActive) {
+    color: $color;
+    background: $bg;
+    box-shadow: $shadow;
+    &:hover
+    {
+        box-shadow: $shadowActive;
+    }
+    &.active{
+        background: $bg + 20;
+    }
+}
+
+.bt-default{
+    @include btnStyle($defaultColor, $defaultBg, $boxShadow, $activeShadow);
+}
+.bt-primary{
+    @include btnStyle($primaryColor, $primaryBg, $boxShadow, $activeShadow);
+}
+.bt-success{
+    @include btnStyle($primaryColor, $successBg, $boxShadow, $activeShadow);
+}
+.bt-info{
+    @include btnStyle($primaryColor, $infoBg, $boxShadow, $activeShadow);
+}
+.bt-warning{
+    @include btnStyle($primaryColor, $warningBg, $boxShadow, $activeShadow);
+}
+.bt-danger{
+    @include btnStyle($primaryColor, $dangerBg, $boxShadow, $activeShadow);
+}
+
+.bt-disable{
+    color: #B5ADAD;
 }
