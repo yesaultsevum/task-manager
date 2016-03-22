@@ -7,17 +7,19 @@ import {ProjectsComponent} from './projects.component';
 import {ProjectService} from './project.service';
 import {BoardService} from './board.service';
 import {TaskService} from './task.service';
+import {AuthComponent} from './auth.component';
 
 
 @Component({
   selector: 'projects-app',
   templateUrl: 'templates/project.html',
   directives: [ROUTER_DIRECTIVES],
-  providers: [ProjectService, BoardService, TaskService, Http]
+  providers: [ProjectService, BoardService, TaskService, AuthComponent, Http]
 })
 @RouteConfig([
-  {path: '/projects', name: 'Projects', component: ProjectsListComponent, useAsDefault: true },
-  {path: '/projects/:id', name: 'Dashboard', component: ProjectDetailComponent}
+  {path: '/projects', name: 'Projects', component: ProjectsListComponent },
+  {path: '/projects/:id', name: 'Dashboard', component: ProjectDetailComponent},
+   {path: '', name: 'Auth', component: AuthComponent, useAsDefault: true}
 ])
 export class AppComponent {
   public title = 'Projects';

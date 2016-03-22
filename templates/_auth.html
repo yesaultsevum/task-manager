@@ -1,5 +1,6 @@
 ﻿
-    <div class="container" ng-app="validationApp" ng-controller="mainController">
+<login-page>
+    <div class="container">
         <div class="row">
             <br /><br /><br />
             <div class="col-md-4 col-md-offset-3">
@@ -19,23 +20,23 @@
                     </div>
 
                     <div class="panel-body">
-                        <form name="userForm" ng-submit="submitForm()" novalidate>
+                        <form name="userForm" [ngFormModel]="loginForm" (submit)="doLogin($event)">
 
-                            <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+                            <div class="form-group">
                                 <label>Username</label>
-                                <input type="text" class="form-control" name="username" ng-model="username" required />
-                                <p ng-show="userForm.username.$invalid && !userForm.username.$pristine" class="help-block">You username is required.</p>
+                                <input ngControl="username" type="text" class="form-control" name="username" />
+                                <p *ngIf="!username.control.hasError('required')" class="help-block">You username is required.</p>
                             </div>
 
-                            <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
+                            <div class="form-group">
                                 <label>Password</label>
-                                <input type="password" class="form-control" name="password" ng-model="password" ng-minlength="6" ng-maxlength="10" required />
-                                <p ng-show="userForm.password.$error.minlength" class="help-block">Password is too short.</p>
-                                <p ng-show="userForm.password.$error.maxlength" class="help-block">Password is too long.</p>
+                                <input ngControl="password" type="password" class="form-control" [class.has-error]="!password.control.hasError('required')" name="password" />
+                                <p *ngIf="!password.control.hasError('required')" class="help-block">You password is required.</p>
+                                <p *ngIf=”password.errors.minlength” class="help-block">Password is too short.</p>
                             </div>
 
                             <div align="center">
-                                <button type="submit" class="btn btn-warning btn-lg" ng-disabled="userForm.$invalid">Login</button>
+                                <button type="submit" class="btn btn-warning btn-lg">Login</button>
                             </div>
 
                         </form>
@@ -44,3 +45,4 @@
             </div>
         </div>
     </div>
+</login-page>    
