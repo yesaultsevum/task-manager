@@ -1,5 +1,4 @@
 import {Component} from 'angular2/core';
-import {Http, Response} from 'angular2/http';
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 import {ProjectsListComponent} from './projects-list.component';
 import {ProjectDetailComponent} from './project-detail.component';
